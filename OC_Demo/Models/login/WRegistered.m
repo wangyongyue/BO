@@ -31,11 +31,24 @@
 
 - (void)loadData:(ArrayBlock)block{
     
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+    WLoginInputCellModel *m1 = [[WLoginInputCellModel alloc]init];
+    m1.title = @"输入手机号";
+    
+    WLoginVCodeCellModel *m4 = [[WLoginVCodeCellModel alloc]init];
+    m4.title = @"输入验证码";
+    
+    WLoginInputCellModel *m2 = [[WLoginInputCellModel alloc]init];
+    m2.title = @"输入密码";
+    
+    WLoginButtonCellModel *m3 = [[WLoginButtonCellModel alloc]init];
+    m3.title = @"登录";
+    
+    [self.array addObject:m1];
+    [self.array addObject:m4];
+    [self.array addObject:m2];
+    [self.array addObject:m3];
+    
+    
     block(self.array);
 }
 

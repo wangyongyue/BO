@@ -31,11 +31,13 @@
 }
 - (void)postWithData:(NSDictionary *)response{
     
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+    for (int i = 0; i < 10; i ++) {
+        
+        WFollowCellModel *model = [[WFollowCellModel alloc]init];
+        model.title = [NSString stringWithFormat:@"fans%d",i];
+        [self.array addObject:model];
+    }
+    
     self.block(self.array);
     
 }

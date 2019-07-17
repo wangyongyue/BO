@@ -32,11 +32,39 @@
 }
 - (void)postWithData:(NSDictionary *)response{
     
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+    WMineHeaderCellModel *header = [[WMineHeaderCellModel alloc]init];
+    header.title = @"头像";
+    
+    WMineLineCellModel *line = [[WMineLineCellModel alloc]init];
+    
+    WMineCellModel *gongxian = [[WMineCellModel alloc]init];
+    gongxian.title = @"贡献";
+    
+    WMineCellModel *qianbao = [[WMineCellModel alloc]init];
+    qianbao.title = @"钱包";
+    
+    WMineCellModel *dengji = [[WMineCellModel alloc]init];
+    dengji.title = @"等级";
+    
+    WMineCellModel *shezhi = [[WMineCellModel alloc]init];
+    shezhi.title = @"设置";
+    
+    WMineCellModel *follow = [[WMineCellModel alloc]init];
+    follow.title = @"关注";
+    
+    WMineCellModel *fans = [[WMineCellModel alloc]init];
+    fans.title = @"粉丝";
+    
+    [self.array addObject:header];
+    [self.array addObject:line];
+    [self.array addObject:gongxian];
+    [self.array addObject:qianbao];
+    [self.array addObject:dengji];
+    [self.array addObject:shezhi];
+    [self.array addObject:follow];
+    [self.array addObject:fans];
+
+    
     self.block(self.array);
     
 }
@@ -51,22 +79,22 @@
         WPersonal *m = [[WPersonal alloc]init];
         [Router push:m];
         
-    }else if (index == 1){
+    }else if (index == 3){
         
         WMoney *m = [[WMoney alloc]init];
         [Router push:m];
         
-    }else if (index == 2){
+    }else if (index == 5){
         
         WSetUp *m = [[WSetUp alloc]init];
         [Router push:m];
-    }else if (index == 3){
+    }else if (index == 6){
         
         WConcern *m = [[WConcern alloc]init];
         [Router push:m];
         
         
-    }else if (index == 4){
+    }else if (index == 7){
         
         WFans *m = [[WFans alloc]init];
         [Router push:m];

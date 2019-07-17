@@ -31,11 +31,35 @@
 }
 - (void)postWithData:(NSDictionary *)response{
     
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+    WPersonHeaderCellModel *header = [[WPersonHeaderCellModel alloc]init];
+    header.title = @"头像";
+    
+    WMineLineCellModel *line = [[WMineLineCellModel alloc]init];
+    
+    WPersonCellModel *name = [[WPersonCellModel alloc]init];
+    name.title = @"昵称";
+    
+    WPersonCellModel *sex = [[WPersonCellModel alloc]init];
+    sex.title = @"性别";
+    
+    WPersonCellModel *age = [[WPersonCellModel alloc]init];
+    age.title = @"年龄";
+    
+    WPersonCellModel *qianming = [[WPersonCellModel alloc]init];
+    qianming.title = @"个人签名";
+    
+    WPersonCellModel *phone = [[WPersonCellModel alloc]init];
+    phone.title = @"手机号";
+    
+    [self.array addObject:header];
+    [self.array addObject:line];
+    [self.array addObject:name];
+    [self.array addObject:sex];
+    [self.array addObject:age];
+    [self.array addObject:qianming];
+    [self.array addObject:phone];
+    
+    
     self.block(self.array);
     
 }

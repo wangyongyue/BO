@@ -57,9 +57,7 @@ typedef void (^ArrayBlock)(NSArray * _Nonnull);
 @protocol TableTabDataProtocol <NSObject>
 
 - (void)loadTabData:(ArrayBlock)block;
-- (void)tableTabIndex:(NSInteger)index;
 - (void)loadData:(ArrayBlock)block;
-- (void)tableIndex:(NSInteger)index;
 
 @end
 
@@ -105,12 +103,24 @@ typedef void (^ArrayBlock)(NSArray * _Nonnull);
 #import "WShow.h"
 #import "WAnchorEnd.h"
 #import "WAudienceEnd.h"
-#import "WHome.h"
-#import "WHost.h"
+
+
 
 //https
 #import "WHttpPhoneLogin.h"
 #import "WHttpMine.h"
+
+//models
+#import "WHome.h"
+#import "WHost.h"
+#import "WFollow.h"
+#import "WNew.h"
+
+
+//controller
+#import "WLoginController.h"
+
+
 
 //cells
 #import "OneCell.h"
@@ -118,3 +128,24 @@ typedef void (^ArrayBlock)(NSArray * _Nonnull);
 #import "ThreeCell.h"
 #import "TestCollectionViewCell.h"
 #import "TestCellModel.h"
+#import "WHomeTabCell.h"
+#import "WHomeTabCellModel.h"
+#import "WHomeBottomCellModel.h"
+#import "WHomeBottomCell.h"
+#import "WHomeHostCellModel.h"
+#import "WHomeHostCell.h"
+#import "WLoginCell.h"
+#import "WLoginCell.h"
+#import "WLoginOtherCell.h"
+#import "WLoginInputCell.h"
+#import "WLoginVCodeCell.h"
+#import "WLoginButtonCell.h"
+#import "WMineHeaderCell.h"
+#import "WMineLineCell.h"
+#import "WMineCell.h"
+#import "WPersonHeaderCell.h"
+#import "WPersonCell.h"
+#import "WLRTitleCell.h"
+#import "WTitleImgCell.h"
+#import "WCTitleCell.h"
+#import "WFollowCell.h"

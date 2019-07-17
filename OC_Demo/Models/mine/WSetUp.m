@@ -31,11 +31,37 @@
 }
 - (void)postWithData:(NSDictionary *)response{
     
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+    WLRTitleCellModel *aid = [[WLRTitleCellModel alloc]init];
+    aid.title = @"ID号";
+    
+    WLRTitleCellModel *person = [[WLRTitleCellModel alloc]init];
+    person.title = @"个人资料";
+    
+    WMineLineCellModel *line = [[WMineLineCellModel alloc]init];
+    
+    WLRTitleCellModel *cache = [[WLRTitleCellModel alloc]init];
+    cache.title = @"清理缓存";
+    
+    WTitleImgCellModel *zhibo = [[WTitleImgCellModel alloc]init];
+    zhibo.title = @"直播公约";
+    
+    WTitleImgCellModel *about = [[WTitleImgCellModel alloc]init];
+    about.title = @"关于我们";
+    
+    WMineLineCellModel *line1 = [[WMineLineCellModel alloc]init];
+
+    WCTitleCellModel *logOut = [[WCTitleCellModel alloc]init];
+    logOut.title = @"退出";
+    
+    [self.array addObject:aid];
+    [self.array addObject:person];
+    [self.array addObject:line];
+    [self.array addObject:cache];
+    [self.array addObject:zhibo];
+    [self.array addObject:about];
+    [self.array addObject:line1];
+    [self.array addObject:logOut];
+    
     self.block(self.array);
     
 }
@@ -45,22 +71,12 @@
 }
 - (void)tableIndex:(NSInteger)index{
     
-    if (index == 0){
+    if (index == 1){
         
         WPersonal *m = [[WPersonal alloc]init];
         [Router push:m];
         
-    }else if (index == 1){
-        
-        WMoney *m = [[WMoney alloc]init];
-        [Router push:m];
-        
-    }else if (index == 2){
-        
-        WMoney *m = [[WMoney alloc]init];
-        [Router push:m];
     }
-    
 }
 
 - (NSMutableArray *)array{

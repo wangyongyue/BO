@@ -25,7 +25,7 @@
 }
 
 - (UIViewController *)getVC{
-    WTableListVC *vc = [[WTableListVC alloc]init];
+    WLoginController *vc = [[WLoginController alloc]init];
     vc.navigationItem.title = @"登录";
     vc.m = self;
     return vc;
@@ -33,11 +33,18 @@
 
 - (void)loadData:(ArrayBlock)block{
     
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+    WLoginCellModel *m1 = [[WLoginCellModel alloc]init];
+    m1.title = @"手机登录";
+    
+    WLoginCellModel *m2 = [[WLoginCellModel alloc]init];
+    m2.title = @"注册";
+    
+    WLoginOtherModel *m3 = [[WLoginOtherModel alloc]init];
+    m3.title = @"第三方登录";
+    
+    [self.array addObject:m1];
+    [self.array addObject:m2];
+    [self.array addObject:m3];
     block(self.array);
 }
 
@@ -47,7 +54,7 @@
         
         WPhoneLogin *m = [[WPhoneLogin alloc]init];
         [Router push:m];
-    }else{
+    }else if (index == 1){
         
         WRegistered *m = [[WRegistered alloc]init];
         [Router push:m];

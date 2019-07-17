@@ -19,7 +19,7 @@
         [self.contentView addSubview:label];
         label.text = @"style1";
         label.textColor = UIColor.redColor;
-        label.frame = CGRectMake(0, 0, 100, 50);
+        label.frame = CGRectMake(50, 0, 100, 50);
     }
     return self;
 }

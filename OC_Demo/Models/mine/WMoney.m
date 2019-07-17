@@ -30,12 +30,9 @@
     [POST request:self.http model:self];
 }
 - (void)postWithData:(NSDictionary *)response{
-    
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+    WLRTitleCellModel *m = [[WLRTitleCellModel alloc]init];
+    m.title = @"10200   6元";
+    [self.array addObject:m];
     self.block(self.array);
     
 }

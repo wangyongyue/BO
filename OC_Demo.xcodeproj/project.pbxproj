@@ -70,6 +70,27 @@
 		458F05C422D99E0E00271BB4 /* TestCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05C322D99E0E00271BB4 /* TestCollectionViewCell.m */; };
 		458F05C722D99E1D00271BB4 /* TestCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05C622D99E1D00271BB4 /* TestCellModel.m */; };
 		458F05CA22D99F6400271BB4 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05C922D99F6400271BB4 /* Test.m */; };
+		458F05D722DF538B00271BB4 /* WHomeTabCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05D622DF538B00271BB4 /* WHomeTabCell.m */; };
+		458F05DA22DF539600271BB4 /* WHomeTabCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05D922DF539600271BB4 /* WHomeTabCellModel.m */; };
+		458F05DD22DF59AF00271BB4 /* WHomeBottomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05DC22DF59AF00271BB4 /* WHomeBottomCell.m */; };
+		458F05E022DF59BF00271BB4 /* WHomeBottomCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05DF22DF59BF00271BB4 /* WHomeBottomCellModel.m */; };
+		458F05E322DF5DE800271BB4 /* WHomeHostCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05E222DF5DE800271BB4 /* WHomeHostCell.m */; };
+		458F05E622DF5DF600271BB4 /* WHomeHostCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05E522DF5DF600271BB4 /* WHomeHostCellModel.m */; };
+		458F05E922DF616900271BB4 /* WLoginCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05E822DF616900271BB4 /* WLoginCell.m */; };
+		458F05EF22DF629200271BB4 /* WLoginOtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05EE22DF629200271BB4 /* WLoginOtherCell.m */; };
+		458F05F222DF62E100271BB4 /* WLoginInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05F122DF62E100271BB4 /* WLoginInputCell.m */; };
+		458F05F522DF631300271BB4 /* WLoginVCodeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05F422DF631300271BB4 /* WLoginVCodeCell.m */; };
+		458F05F822DF632600271BB4 /* WLoginButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05F722DF632600271BB4 /* WLoginButtonCell.m */; };
+		458F05FB22DF640700271BB4 /* WLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05FA22DF640700271BB4 /* WLoginController.m */; };
+		458F05FE22DF688D00271BB4 /* WMineHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F05FD22DF688D00271BB4 /* WMineHeaderCell.m */; };
+		458F060122DF68AA00271BB4 /* WMineLineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F060022DF68AA00271BB4 /* WMineLineCell.m */; };
+		458F060422DF68B800271BB4 /* WMineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F060322DF68B800271BB4 /* WMineCell.m */; };
+		458F060722DF690B00271BB4 /* WPersonHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F060622DF690B00271BB4 /* WPersonHeaderCell.m */; };
+		458F060A22DF694400271BB4 /* WPersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F060922DF694400271BB4 /* WPersonCell.m */; };
+		458F060D22DF696200271BB4 /* WLRTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F060C22DF696200271BB4 /* WLRTitleCell.m */; };
+		458F061622DF69C500271BB4 /* WTitleImgCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F061522DF69C500271BB4 /* WTitleImgCell.m */; };
+		458F061922DF69D900271BB4 /* WCTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F061822DF69D900271BB4 /* WCTitleCell.m */; };
+		458F061C22DF6F8600271BB4 /* WFollowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F061B22DF6F8600271BB4 /* WFollowCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +243,48 @@
 		458F05C822D99F6400271BB4 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		458F05C922D99F6400271BB4 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		458F05CB22D9A18E00271BB4 /* Interface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Interface.h; sourceTree = "<group>"; };
+		458F05D522DF538B00271BB4 /* WHomeTabCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHomeTabCell.h; sourceTree = "<group>"; };
+		458F05D622DF538B00271BB4 /* WHomeTabCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHomeTabCell.m; sourceTree = "<group>"; };
+		458F05D822DF539600271BB4 /* WHomeTabCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHomeTabCellModel.h; sourceTree = "<group>"; };
+		458F05D922DF539600271BB4 /* WHomeTabCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHomeTabCellModel.m; sourceTree = "<group>"; };
+		458F05DB22DF59AF00271BB4 /* WHomeBottomCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHomeBottomCell.h; sourceTree = "<group>"; };
+		458F05DC22DF59AF00271BB4 /* WHomeBottomCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHomeBottomCell.m; sourceTree = "<group>"; };
+		458F05DE22DF59BF00271BB4 /* WHomeBottomCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHomeBottomCellModel.h; sourceTree = "<group>"; };
+		458F05DF22DF59BF00271BB4 /* WHomeBottomCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHomeBottomCellModel.m; sourceTree = "<group>"; };
+		458F05E122DF5DE800271BB4 /* WHomeHostCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHomeHostCell.h; sourceTree = "<group>"; };
+		458F05E222DF5DE800271BB4 /* WHomeHostCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHomeHostCell.m; sourceTree = "<group>"; };
+		458F05E422DF5DF600271BB4 /* WHomeHostCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHomeHostCellModel.h; sourceTree = "<group>"; };
+		458F05E522DF5DF600271BB4 /* WHomeHostCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHomeHostCellModel.m; sourceTree = "<group>"; };
+		458F05E722DF616900271BB4 /* WLoginCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLoginCell.h; sourceTree = "<group>"; };
+		458F05E822DF616900271BB4 /* WLoginCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLoginCell.m; sourceTree = "<group>"; };
+		458F05ED22DF629200271BB4 /* WLoginOtherCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLoginOtherCell.h; sourceTree = "<group>"; };
+		458F05EE22DF629200271BB4 /* WLoginOtherCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLoginOtherCell.m; sourceTree = "<group>"; };
+		458F05F022DF62E100271BB4 /* WLoginInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLoginInputCell.h; sourceTree = "<group>"; };
+		458F05F122DF62E100271BB4 /* WLoginInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLoginInputCell.m; sourceTree = "<group>"; };
+		458F05F322DF631300271BB4 /* WLoginVCodeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLoginVCodeCell.h; sourceTree = "<group>"; };
+		458F05F422DF631300271BB4 /* WLoginVCodeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLoginVCodeCell.m; sourceTree = "<group>"; };
+		458F05F622DF632600271BB4 /* WLoginButtonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLoginButtonCell.h; sourceTree = "<group>"; };
+		458F05F722DF632600271BB4 /* WLoginButtonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLoginButtonCell.m; sourceTree = "<group>"; };
+		458F05F922DF640700271BB4 /* WLoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLoginController.h; sourceTree = "<group>"; };
+		458F05FA22DF640700271BB4 /* WLoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLoginController.m; sourceTree = "<group>"; };
+		458F05FC22DF688D00271BB4 /* WMineHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMineHeaderCell.h; sourceTree = "<group>"; };
+		458F05FD22DF688D00271BB4 /* WMineHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMineHeaderCell.m; sourceTree = "<group>"; };
+		458F05FF22DF68AA00271BB4 /* WMineLineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMineLineCell.h; sourceTree = "<group>"; };
+		458F060022DF68AA00271BB4 /* WMineLineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMineLineCell.m; sourceTree = "<group>"; };
+		458F060222DF68B800271BB4 /* WMineCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WMineCell.h; sourceTree = "<group>"; };
+		458F060322DF68B800271BB4 /* WMineCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WMineCell.m; sourceTree = "<group>"; };
+		458F060522DF690B00271BB4 /* WPersonHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPersonHeaderCell.h; sourceTree = "<group>"; };
+		458F060622DF690B00271BB4 /* WPersonHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPersonHeaderCell.m; sourceTree = "<group>"; };
+		458F060822DF694400271BB4 /* WPersonCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPersonCell.h; sourceTree = "<group>"; };
+		458F060922DF694400271BB4 /* WPersonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPersonCell.m; sourceTree = "<group>"; };
+		458F060B22DF696200271BB4 /* WLRTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLRTitleCell.h; sourceTree = "<group>"; };
+		458F060C22DF696200271BB4 /* WLRTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLRTitleCell.m; sourceTree = "<group>"; };
+		458F061422DF69C500271BB4 /* WTitleImgCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTitleImgCell.h; sourceTree = "<group>"; };
+		458F061522DF69C500271BB4 /* WTitleImgCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTitleImgCell.m; sourceTree = "<group>"; };
+		458F061722DF69D900271BB4 /* WCTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WCTitleCell.h; sourceTree = "<group>"; };
+		458F061822DF69D900271BB4 /* WCTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WCTitleCell.m; sourceTree = "<group>"; };
+		458F061A22DF6F8600271BB4 /* WFollowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFollowCell.h; sourceTree = "<group>"; };
+		458F061B22DF6F8600271BB4 /* WFollowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFollowCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -500,6 +563,8 @@
 				18953D7922DF055300D4EB2A /* WCollectionListView.m */,
 				18953DB122DF1E3F00D4EB2A /* WTabVC.h */,
 				18953DB222DF1E3F00D4EB2A /* WTabVC.m */,
+				458F05F922DF640700271BB4 /* WLoginController.h */,
+				458F05FA22DF640700271BB4 /* WLoginController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -507,6 +572,10 @@
 		458F057922D62A3200271BB4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				458F05D122DF530400271BB4 /* homeCell */,
+				458F05D022DF530100271BB4 /* loginCell */,
+				458F05CF22DF52FE00271BB4 /* mineCell */,
+				458F05CE22DF52FB00271BB4 /* bangCell */,
 				18953D6E22DF036D00D4EB2A /* test */,
 			);
 			path = Views;
@@ -602,6 +671,74 @@
 				458F05C622D99E1D00271BB4 /* TestCellModel.m */,
 			);
 			path = oneTest;
+			sourceTree = "<group>";
+		};
+		458F05CE22DF52FB00271BB4 /* bangCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = bangCell;
+			sourceTree = "<group>";
+		};
+		458F05CF22DF52FE00271BB4 /* mineCell */ = {
+			isa = PBXGroup;
+			children = (
+				458F05FC22DF688D00271BB4 /* WMineHeaderCell.h */,
+				458F05FD22DF688D00271BB4 /* WMineHeaderCell.m */,
+				458F05FF22DF68AA00271BB4 /* WMineLineCell.h */,
+				458F060022DF68AA00271BB4 /* WMineLineCell.m */,
+				458F060222DF68B800271BB4 /* WMineCell.h */,
+				458F060322DF68B800271BB4 /* WMineCell.m */,
+				458F060522DF690B00271BB4 /* WPersonHeaderCell.h */,
+				458F060622DF690B00271BB4 /* WPersonHeaderCell.m */,
+				458F060822DF694400271BB4 /* WPersonCell.h */,
+				458F060922DF694400271BB4 /* WPersonCell.m */,
+				458F060B22DF696200271BB4 /* WLRTitleCell.h */,
+				458F060C22DF696200271BB4 /* WLRTitleCell.m */,
+				458F061422DF69C500271BB4 /* WTitleImgCell.h */,
+				458F061522DF69C500271BB4 /* WTitleImgCell.m */,
+				458F061722DF69D900271BB4 /* WCTitleCell.h */,
+				458F061822DF69D900271BB4 /* WCTitleCell.m */,
+				458F061A22DF6F8600271BB4 /* WFollowCell.h */,
+				458F061B22DF6F8600271BB4 /* WFollowCell.m */,
+			);
+			path = mineCell;
+			sourceTree = "<group>";
+		};
+		458F05D022DF530100271BB4 /* loginCell */ = {
+			isa = PBXGroup;
+			children = (
+				458F05E722DF616900271BB4 /* WLoginCell.h */,
+				458F05E822DF616900271BB4 /* WLoginCell.m */,
+				458F05ED22DF629200271BB4 /* WLoginOtherCell.h */,
+				458F05EE22DF629200271BB4 /* WLoginOtherCell.m */,
+				458F05F022DF62E100271BB4 /* WLoginInputCell.h */,
+				458F05F122DF62E100271BB4 /* WLoginInputCell.m */,
+				458F05F322DF631300271BB4 /* WLoginVCodeCell.h */,
+				458F05F422DF631300271BB4 /* WLoginVCodeCell.m */,
+				458F05F622DF632600271BB4 /* WLoginButtonCell.h */,
+				458F05F722DF632600271BB4 /* WLoginButtonCell.m */,
+			);
+			path = loginCell;
+			sourceTree = "<group>";
+		};
+		458F05D122DF530400271BB4 /* homeCell */ = {
+			isa = PBXGroup;
+			children = (
+				458F05D522DF538B00271BB4 /* WHomeTabCell.h */,
+				458F05D622DF538B00271BB4 /* WHomeTabCell.m */,
+				458F05D822DF539600271BB4 /* WHomeTabCellModel.h */,
+				458F05D922DF539600271BB4 /* WHomeTabCellModel.m */,
+				458F05DB22DF59AF00271BB4 /* WHomeBottomCell.h */,
+				458F05DC22DF59AF00271BB4 /* WHomeBottomCell.m */,
+				458F05DE22DF59BF00271BB4 /* WHomeBottomCellModel.h */,
+				458F05DF22DF59BF00271BB4 /* WHomeBottomCellModel.m */,
+				458F05E122DF5DE800271BB4 /* WHomeHostCell.h */,
+				458F05E222DF5DE800271BB4 /* WHomeHostCell.m */,
+				458F05E422DF5DF600271BB4 /* WHomeHostCellModel.h */,
+				458F05E522DF5DF600271BB4 /* WHomeHostCellModel.m */,
+			);
+			path = homeCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -742,27 +879,42 @@
 				458F059022D632D900271BB4 /* ThreeCell.m in Sources */,
 				18953D9C22DF08F900D4EB2A /* View+MASAdditions.m in Sources */,
 				18953D9922DF08F900D4EB2A /* MASConstraintMaker.m in Sources */,
+				458F05FB22DF640700271BB4 /* WLoginController.m in Sources */,
 				18953D6522DEFFA100D4EB2A /* WHttpRegistered.m in Sources */,
+				458F060A22DF694400271BB4 /* WPersonCell.m in Sources */,
 				18953D6B22DEFFD600D4EB2A /* WHttpHostAnchor.m in Sources */,
 				18953D9822DF08F900D4EB2A /* MASCompositeConstraint.m in Sources */,
 				18953D7422DF04C400D4EB2A /* WTableListVC.m in Sources */,
 				458F054B22D62A2200271BB4 /* ViewController.m in Sources */,
 				18953D9D22DF08F900D4EB2A /* MASConstraint.m in Sources */,
 				18953D9E22DF08F900D4EB2A /* MASViewConstraint.m in Sources */,
+				458F05DD22DF59AF00271BB4 /* WHomeBottomCell.m in Sources */,
 				18953DA722DF0F3000D4EB2A /* Router.m in Sources */,
+				458F061922DF69D900271BB4 /* WCTitleCell.m in Sources */,
 				18953D6222DEFF8400D4EB2A /* WHttpPhoneLogin.m in Sources */,
 				18953D9B22DF08F900D4EB2A /* NSArray+MASAdditions.m in Sources */,
 				18953D7A22DF055300D4EB2A /* WCollectionListView.m in Sources */,
+				458F05E322DF5DE800271BB4 /* WHomeHostCell.m in Sources */,
 				458F05B222D7869500271BB4 /* TwoCellModel.m in Sources */,
+				458F061622DF69C500271BB4 /* WTitleImgCell.m in Sources */,
 				458F05CA22D99F6400271BB4 /* Test.m in Sources */,
 				18953D5322DEFDE900D4EB2A /* WConcern.m in Sources */,
 				458F05BD22D99AEC00271BB4 /* UICollectionViewCell+CellFunc.m in Sources */,
 				18953D3222DEFBCC00D4EB2A /* WLogin.m in Sources */,
+				458F060122DF68AA00271BB4 /* WMineLineCell.m in Sources */,
 				18953D5F22DEFF4100D4EB2A /* WAudienceEnd.m in Sources */,
 				458F059D22D7748A00271BB4 /* WTable.m in Sources */,
+				458F05D722DF538B00271BB4 /* WHomeTabCell.m in Sources */,
+				458F05DA22DF539600271BB4 /* WHomeTabCellModel.m in Sources */,
 				458F05A022D77AD600271BB4 /* TestViewController.m in Sources */,
+				458F05E922DF616900271BB4 /* WLoginCell.m in Sources */,
+				458F05F222DF62E100271BB4 /* WLoginInputCell.m in Sources */,
+				458F05E622DF5DF600271BB4 /* WHomeHostCellModel.m in Sources */,
+				458F05F522DF631300271BB4 /* WLoginVCodeCell.m in Sources */,
+				458F05E022DF59BF00271BB4 /* WHomeBottomCellModel.m in Sources */,
 				18953D7722DF04E300D4EB2A /* WCollectionListVC.m in Sources */,
 				458F05AF22D784B400271BB4 /* UITableViewCell+CellFunc.m in Sources */,
+				458F060D22DF696200271BB4 /* WLRTitleCell.m in Sources */,
 				458F05C422D99E0E00271BB4 /* TestCollectionViewCell.m in Sources */,
 				18953D9A22DF08F900D4EB2A /* MASLayoutConstraint.m in Sources */,
 				18953D4422DEFCC600D4EB2A /* WMoney.m in Sources */,
@@ -777,19 +929,25 @@
 				18953D5C22DEFF1100D4EB2A /* WAnchorEnd.m in Sources */,
 				18953D5922DEFE4400D4EB2A /* WBang.m in Sources */,
 				18953D4722DEFD0200D4EB2A /* WSetUp.m in Sources */,
+				458F060722DF690B00271BB4 /* WPersonHeaderCell.m in Sources */,
 				458F058D22D632CD00271BB4 /* TwoCell.m in Sources */,
+				458F05FE22DF688D00271BB4 /* WMineHeaderCell.m in Sources */,
 				18953D5022DEFD6200D4EB2A /* WNew.m in Sources */,
 				18953D9F22DF08F900D4EB2A /* MASViewAttribute.m in Sources */,
 				458F055622D62A2300271BB4 /* main.m in Sources */,
 				18953DAD22DF1A6500D4EB2A /* WHome.m in Sources */,
 				18953D6822DEFFBB00D4EB2A /* WHttpMine.m in Sources */,
+				458F060422DF68B800271BB4 /* WMineCell.m in Sources */,
 				18953D9722DF08F900D4EB2A /* ViewController+MASAdditions.m in Sources */,
+				458F05F822DF632600271BB4 /* WLoginButtonCell.m in Sources */,
 				18953D4A22DEFD4C00D4EB2A /* WHost.m in Sources */,
 				18953D3522DEFBE200D4EB2A /* WPhoneLogin.m in Sources */,
 				18953D9622DF08F900D4EB2A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				458F05A622D780C600271BB4 /* OneCellModel.m in Sources */,
 				458F054822D62A2200271BB4 /* AppDelegate.m in Sources */,
 				18953CED22DC6ABC00D4EB2A /* Cells.m in Sources */,
+				458F061C22DF6F8600271BB4 /* WFollowCell.m in Sources */,
+				458F05EF22DF629200271BB4 /* WLoginOtherCell.m in Sources */,
 				458F05C722D99E1D00271BB4 /* TestCellModel.m in Sources */,
 				18953D4D22DEFD5500D4EB2A /* WFollow.m in Sources */,
 				18953D4122DEFCA800D4EB2A /* WPersonEditor.m in Sources */,

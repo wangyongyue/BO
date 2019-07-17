@@ -8,9 +8,11 @@
 
 #import "WTabVC.h"
 
-@interface WTabVC ()
+@interface WTabVC ()<UIScrollViewDelegate>
 @property(nonatomic,strong)WCollectionView *collection;
 @property(nonatomic,strong)WCollectionView *collectionBottom;
+@property(nonatomic,strong)UIView *lineView;
+@property(nonatomic,strong)UIView *blueView;
 
 
 @end
@@ -29,9 +31,14 @@
     layout.minimumInteritemSpacing = 0;
     layout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     WCollectionView *collection = [[WCollectionView alloc]initWithLayout:layout inndex:^(NSInteger index) {
-        
-        [self.m tableTabIndex:index];
-        
+                
+        [UIView animateWithDuration:.3 animations:^{
+            
+            CGRect frame = self.lineView.frame;
+            frame.origin.x = WWIDTH/3 * index;
+            self.lineView.frame = frame;
+            
+        }];
         [weakSelf.collectionBottom setContentOffset:CGPointMake(WWIDTH * index, 0) animated:YES];
 
     }];
@@ -54,13 +61,12 @@
     layoutBottom.minimumInteritemSpacing = 0;
     layoutBottom.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     WCollectionView *collectionBottom = [[WCollectionView alloc]initWithLayout:layoutBottom inndex:^(NSInteger index) {
-        
-        [self.m tableIndex:index];
-        
+                
        
     }];
     [self.view addSubview:collectionBottom];
     collectionBottom.pagingEnabled = YES;
+    collectionBottom.delegate = self;
     [collectionBottom mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.offset(WTOP + 50);
         make.bottom.offset(0);
@@ -69,6 +75,15 @@
         
     }];
     
+    self.lineView = [[UIView alloc]init];
+    [self.view addSubview:self.lineView];
+    self.lineView.backgroundColor = UIColor.whiteColor;
+    self.lineView.frame = CGRectMake(0, 50 + WTOP, WWIDTH/3, 5);
+    
+    self.blueView = [[UIView alloc]init];
+    [self.lineView addSubview:self.blueView];
+    self.blueView.backgroundColor = UIColor.blueColor;
+    self.blueView.frame = CGRectMake(WWIDTH/3/4, 0, WWIDTH/3/2, 5);
     
     
     [self.m loadTabData:^(NSArray * _Nonnull array) {
@@ -88,5 +103,18 @@
     self.collection = collection;
 
 }
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+    
+    CGFloat x = scrollView.contentOffset.x / WWIDTH;
+    [UIView animateWithDuration:.3 animations:^{
+        
+        CGRect frame = self.lineView.frame;
+        frame.origin.x = WWIDTH/3 * x;
+        self.lineView.frame = frame;
+        
+    }];
+    
+}
+
 
 @end

@@ -26,27 +26,39 @@
 }
 
 - (void)loadTabData:(ArrayBlock)block{
+    WHomeTabCellModel *m1 = [[WHomeTabCellModel alloc]init];
+    m1.title = @"热门";
     
-    [self.arrayTab addObject:[[TestCellModel alloc]init]];
-    [self.arrayTab addObject:[[TestCellModel alloc]init]];
-    [self.arrayTab addObject:[[TestCellModel alloc]init]];
-    block(self.array);
-}
-- (void)tableTabIndex:(NSInteger)index{
+    WHomeTabCellModel *m2 = [[WHomeTabCellModel alloc]init];
+    m2.title = @"关注";
     
+    WHomeTabCellModel *m3 = [[WHomeTabCellModel alloc]init];
+    m3.title = @"最新";
     
-}
-- (void)loadData:(ArrayBlock)block{
-    
-    [self.array addObject:[[TestCellModel alloc]init]];
-    [self.array addObject:[[TestCellModel alloc]init]];
-    [self.array addObject:[[TestCellModel alloc]init]];
-    block(self.array);
+    [self.arrayTab addObject:m1];
+    [self.arrayTab addObject:m2];
+    [self.arrayTab addObject:m3];
+    block(self.arrayTab);
 }
 
-- (void)tableIndex:(NSInteger)index{
+- (void)loadData:(ArrayBlock)block{
     
+    WHomeBottomCellModel *m1 = [[WHomeBottomCellModel alloc]init];
+    WHost *host = [[WHost alloc]init];
+    m1.subView = [host getView];
     
+    WHomeBottomCellModel *m2 = [[WHomeBottomCellModel alloc]init];
+    WFollow *follow = [[WFollow alloc]init];
+    m2.subView = [follow getView];
+    
+    WHomeBottomCellModel *m3 = [[WHomeBottomCellModel alloc]init];
+    WNew *new = [[WNew alloc]init];
+    m3.subView = [new getView];
+    
+    [self.array addObject:m1];
+    [self.array addObject:m2];
+    [self.array addObject:m3];
+    block(self.array);
     
 }
 
