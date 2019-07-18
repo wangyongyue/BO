@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WCollectionListVC : UIViewController
 @property(nonatomic,strong)id<TableDataProtocol> m;
+@property(nonatomic,strong)id<NavigationItemProtocol> rightM;
 
 @end
 
