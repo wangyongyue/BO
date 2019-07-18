@@ -1,8 +1,8 @@
 //
-//  WPersonCell.h
+//  WPasswordCell.h
 //  OC_Demo
 //
-//  Created by wangyongyue on 2019/7/17.
+//  Created by apple on 2019/7/18.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
@@ -11,14 +11,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WPersonCell : UITableViewCell
+@interface WPasswordCell : UITableViewCell
 
 @end
-
-@interface WPersonCellModel : NSObject <CellModelProtocol>
+@interface WPasswordCellModel : NSObject <CellModelProtocol>
 @property(nonatomic,copy)NSString *title;
-@property(nonatomic,copy)NSString *subTitle;
-
+@property(nonatomic,copy)NSString *input;
 
 @end
+
 NS_ASSUME_NONNULL_END

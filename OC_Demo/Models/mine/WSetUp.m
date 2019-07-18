@@ -33,15 +33,18 @@
     
     WLRTitleCellModel *aid = [[WLRTitleCellModel alloc]init];
     aid.title = @"ID号";
-    
+    aid.subTitle = @"123";
+
     WLRTitleCellModel *person = [[WLRTitleCellModel alloc]init];
     person.title = @"个人资料";
-    
+    person.subTitle = @"123";
+
     WMineLineCellModel *line = [[WMineLineCellModel alloc]init];
     
     WLRTitleCellModel *cache = [[WLRTitleCellModel alloc]init];
     cache.title = @"清理缓存";
-    
+    cache.subTitle = @"123";
+
     WTitleImgCellModel *zhibo = [[WTitleImgCellModel alloc]init];
     zhibo.title = @"直播公约";
     

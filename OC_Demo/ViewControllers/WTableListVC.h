@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WTableListVC : UIViewController
 @property(nonatomic,strong)id<TableDataProtocol> m;
+@property(nonatomic,strong)id<NavigationItemProtocol> rightM;
+
 
 @end
 

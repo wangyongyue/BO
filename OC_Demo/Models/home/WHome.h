@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WHome : NSObject <GetVCProtocol,TableTabDataProtocol>
+@interface WHome : NSObject <GetVCProtocol,TableTabDataProtocol,NavigationItemProtocol>
 
 @end
 

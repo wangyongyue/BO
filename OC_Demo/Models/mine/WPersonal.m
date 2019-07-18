@@ -33,23 +33,29 @@
     
     WPersonHeaderCellModel *header = [[WPersonHeaderCellModel alloc]init];
     header.title = @"头像";
-    
+
     WMineLineCellModel *line = [[WMineLineCellModel alloc]init];
     
     WPersonCellModel *name = [[WPersonCellModel alloc]init];
     name.title = @"昵称";
-    
+    name.subTitle = @"123";
+
     WPersonCellModel *sex = [[WPersonCellModel alloc]init];
     sex.title = @"性别";
-    
+    sex.subTitle = @"123";
+
     WPersonCellModel *age = [[WPersonCellModel alloc]init];
     age.title = @"年龄";
-    
+    age.subTitle = @"123";
+
     WPersonCellModel *qianming = [[WPersonCellModel alloc]init];
     qianming.title = @"个人签名";
-    
+    qianming.subTitle = @"123";
+
     WPersonCellModel *phone = [[WPersonCellModel alloc]init];
     phone.title = @"手机号";
+    phone.subTitle = @"123";
+
     
     [self.array addObject:header];
     [self.array addObject:line];
@@ -71,8 +77,14 @@
     
     if (index == 0){
         
-        WPersonEditor *m = [[WPersonEditor alloc]init];
-        [Router push:m];
+//        WPersonEditor *m = [[WPersonEditor alloc]init];
+//        [Router push:m];
+        
+        WEditorView *view = [[WEditorView alloc]init];
+        [view show:@"sdf" block:^(NSString * _Nonnull str) {
+           
+            NSLog(str);
+        }];
         
     }
     

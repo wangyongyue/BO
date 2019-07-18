@@ -1,17 +1,17 @@
 //
-//  WLoginCell.m
+//  WForgetCell.m
 //  OC_Demo
 //
-//  Created by wangyongyue on 2019/7/17.
+//  Created by apple on 2019/7/18.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
-#import "WLoginCell.h"
+#import "WForgetCell.h"
 
-@interface WLoginCell ()
+@interface WForgetCell ()
 @property(nonatomic,strong)UILabel *label;
 @end
-@implementation WLoginCell
+@implementation WForgetCell
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
@@ -21,40 +21,33 @@
         self.label =  [[UILabel alloc]init];
         [self.contentView addSubview:self.label];
         self.label.textColor = UIColor.redColor;
-        self.label.textAlignment = NSTextAlignmentCenter;
+        self.label.textAlignment = NSTextAlignmentRight;
         [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.offset(5);
-            make.bottom.offset(-5);
-            make.left.offset(30);
-            make.right.offset(-30);
-
+            make.right.offset(-10);
+            
         }];
-        self.label.layer.borderColor = UIColor.redColor.CGColor;
-        self.label.layer.borderWidth = 1.0;
-        self.label.layer.cornerRadius = 20;
-        self.label.layer.masksToBounds = YES;
-        
+       
     }
     
     return self;
     
 }
 - (void)setModel:(id<CellModelProtocol>)model{
-    if ([model isKindOfClass:[WLoginCellModel class]]){
-        WLoginCellModel *m = (WLoginCellModel *)model;
+    if ([model isKindOfClass:[WForgetCellModel class]]){
+        WForgetCellModel *m = (WForgetCellModel *)model;
         self.label.text = m.title;
         
     }
 }
 @end
-
-@implementation WLoginCellModel
+@implementation WForgetCellModel
 - (NSString *)getCellID{
     
-    return NSStringFromClass([WLoginCell class]);
+    return NSStringFromClass([WForgetCell class]);
 }
 - (CGFloat)getCellHeight{
     
-    return 50;
+    return 30;
 }
 @end

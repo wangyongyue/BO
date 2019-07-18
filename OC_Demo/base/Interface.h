@@ -32,7 +32,10 @@
 @end
 
 //controller
-typedef void (^ArrayBlock)(NSArray * _Nonnull);
+typedef void (^ArrayBlock)(NSArray * _Nonnull array);
+typedef void (^ItemsBlock)(NSArray * _Nonnull array);
+typedef void (^ItemBackBlock)(UIButton * _Nonnull item);
+typedef void (^ClickBlock)(NSString * _Nonnull str);
 
 @protocol TableDataProtocol <NSObject>
 
@@ -58,6 +61,18 @@ typedef void (^ArrayBlock)(NSArray * _Nonnull);
 
 - (void)loadTabData:(ArrayBlock)block;
 - (void)loadData:(ArrayBlock)block;
+
+@end
+
+//navigationItemButton
+@protocol NavigationItemProtocol <NSObject>
+
+- (void)navigationItems:(ItemsBlock)block;
+
+@end
+@protocol NavigationBackProtocol <NSObject>
+
+- (void)navigationBack:(ItemBackBlock)block;
 
 @end
 
@@ -115,6 +130,7 @@ typedef void (^ArrayBlock)(NSArray * _Nonnull);
 #import "WHost.h"
 #import "WFollow.h"
 #import "WNew.h"
+#import "WForget.h"
 
 
 //controller
@@ -149,3 +165,6 @@ typedef void (^ArrayBlock)(NSArray * _Nonnull);
 #import "WTitleImgCell.h"
 #import "WCTitleCell.h"
 #import "WFollowCell.h"
+#import "WPasswordCell.h"
+#import "WForgetCell.h"
+#import "WEditorView.h"

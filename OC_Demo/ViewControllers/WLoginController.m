@@ -29,7 +29,7 @@
     }];
     [self.view addSubview:table];
     
-    table.frame = CGRectMake(0, WTOP + 200, WWIDTH, 200);
+    table.frame = CGRectMake(0, WTOP + 200, WWIDTH, WHEIGHT - 200);
     
     __weak __typeof(self) weakSelf  = self;
     

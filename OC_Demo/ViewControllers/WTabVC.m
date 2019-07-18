@@ -52,9 +52,7 @@
         make.right.offset(0);
 
     }];
-    
-    
-    
+        
     UICollectionViewFlowLayout *layoutBottom = [[UICollectionViewFlowLayout alloc]init];
     layoutBottom.itemSize = CGSizeMake(WWIDTH, WHEIGHT - WTOP - 50);
     layoutBottom.minimumLineSpacing = 0;
@@ -101,6 +99,18 @@
     
     self.collectionBottom = collectionBottom;
     self.collection = collection;
+    
+    
+    //
+    [self.rightM navigationItems:^(NSArray * _Nonnull array) {
+        NSMutableArray *items = [[NSMutableArray alloc]init];
+        for (UIButton *item in array) {
+            
+            UIBarButtonItem *a = [[UIBarButtonItem alloc]initWithCustomView:item];
+            [items addObject:a];
+        }
+        self.navigationItem.rightBarButtonItems = items;
+    }];
 
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{

@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WLoginVCodeCellModel : NSObject <CellModelProtocol>
 @property(nonatomic,copy)NSString *title;
+@property(nonatomic,copy)NSString *input;
 
 @end
 NS_ASSUME_NONNULL_END

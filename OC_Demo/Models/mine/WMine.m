@@ -22,9 +22,30 @@
     WTableListVC *vc = [[WTableListVC alloc]init];
     vc.navigationItem.title = @"我的";
     vc.m = self;
+    vc.rightM = self;
     return vc;
 }
 
+- (void)navigationItems:(ItemsBlock)block{
+    
+    NSMutableArray *items = [[NSMutableArray alloc]init];
+    UIButton *bang = [UIButton buttonWithType:UIButtonTypeCustom];
+    [bang setTitle:@"编辑" forState:UIControlStateNormal];
+    [bang setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+   
+    [items addObject:bang];
+    
+    [bang addTarget:self action:@selector(clicKBang) forControlEvents:UIControlEventTouchUpInside];
+    
+    
+    block(items);
+}
+- (void)clicKBang{
+    
+    WPersonal *m = [[WPersonal alloc]init];
+    [Router push:m];
+    
+}
 - (void)loadData:(ArrayBlock)block{
     
     self.block = block;
@@ -49,11 +70,7 @@
     WMineCellModel *shezhi = [[WMineCellModel alloc]init];
     shezhi.title = @"设置";
     
-    WMineCellModel *follow = [[WMineCellModel alloc]init];
-    follow.title = @"关注";
-    
-    WMineCellModel *fans = [[WMineCellModel alloc]init];
-    fans.title = @"粉丝";
+  
     
     [self.array addObject:header];
     [self.array addObject:line];
@@ -61,10 +78,7 @@
     [self.array addObject:qianbao];
     [self.array addObject:dengji];
     [self.array addObject:shezhi];
-    [self.array addObject:follow];
-    [self.array addObject:fans];
-
-    
+   
     self.block(self.array);
     
 }
@@ -76,8 +90,7 @@
     
     if (index == 0){
         
-        WPersonal *m = [[WPersonal alloc]init];
-        [Router push:m];
+       
         
     }else if (index == 3){
         
@@ -88,17 +101,6 @@
         
         WSetUp *m = [[WSetUp alloc]init];
         [Router push:m];
-    }else if (index == 6){
-        
-        WConcern *m = [[WConcern alloc]init];
-        [Router push:m];
-        
-        
-    }else if (index == 7){
-        
-        WFans *m = [[WFans alloc]init];
-        [Router push:m];
-        
     }
     
 }

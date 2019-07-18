@@ -8,39 +8,57 @@
 
 #import "WLoginInputCell.h"
 
-@interface WLoginInputCell ()
-@property(nonatomic,strong)UILabel *label;
+@interface WLoginInputCell () <UITextFieldDelegate>
+@property(nonatomic,strong)UITextField *field;
+@property(nonatomic,strong)WLoginInputCellModel *inputModel;
+
+
 @end
 @implementation WLoginInputCell
+
+- (UITextField *)field{
+    if (_field == nil){
+        
+        _field = [[UITextField alloc]init];
+        _field.borderStyle = UITextBorderStyleRoundedRect;
+        _field.textColor = UIColor.blackColor;
+    }
+    return _field;
+}
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self){
         
-        self.label =  [[UILabel alloc]init];
-        [self.contentView addSubview:self.label];
-        self.label.textColor = UIColor.redColor;
-        self.label.textAlignment = NSTextAlignmentCenter;
-
-        [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.offset(0);
-            make.bottom.offset(0);
-            make.left.offset(0);
-            make.right.offset(0);
+        [self.contentView addSubview:self.field];
+        self.field.delegate = self;
+        [self.field mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.offset(5);
+            make.bottom.offset(-5);
+            make.left.offset(10);
+            make.right.offset(-10);
             
         }];
+        
         
     }
     
     return self;
     
 }
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
+    
+    self.inputModel.input = textField.text;
+    
+    return YES;
+}
 - (void)setModel:(id<CellModelProtocol>)model{
     if ([model isKindOfClass:[WLoginInputCellModel class]]){
         WLoginInputCellModel *m = (WLoginInputCellModel *)model;
-        self.label.text = m.title;
+        self.field.placeholder = m.title;
         
+        self.inputModel = m;
     }
 }
 @end

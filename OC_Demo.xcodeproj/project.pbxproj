@@ -46,6 +46,14 @@
 		18953DAA22DF18B900D4EB2A /* WShow.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DA922DF18B900D4EB2A /* WShow.m */; };
 		18953DAD22DF1A6500D4EB2A /* WHome.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DAC22DF1A6500D4EB2A /* WHome.m */; };
 		18953DB322DF1E3F00D4EB2A /* WTabVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DB222DF1E3F00D4EB2A /* WTabVC.m */; };
+		18953DB822E03D2000D4EB2A /* WAnchorStart.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DB722E03D2000D4EB2A /* WAnchorStart.m */; };
+		18953DBB22E03D6800D4EB2A /* WWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DBA22E03D6800D4EB2A /* WWatch.m */; };
+		18953DBE22E0556B00D4EB2A /* WPasswordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DBD22E0556B00D4EB2A /* WPasswordCell.m */; };
+		18953DC122E0557500D4EB2A /* WForgetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DC022E0557500D4EB2A /* WForgetCell.m */; };
+		18953DC422E056DB00D4EB2A /* WForget.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DC322E056DB00D4EB2A /* WForget.m */; };
+		18953DC822E0687A00D4EB2A /* ca_right@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18953DC622E0687A00D4EB2A /* ca_right@3x.png */; };
+		18953DC922E0687A00D4EB2A /* ca_right@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18953DC722E0687A00D4EB2A /* ca_right@2x.png */; };
+		18953DD122E09F4700D4EB2A /* WEditorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18953DD022E09F4700D4EB2A /* WEditorView.m */; };
 		458F054822D62A2200271BB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F054722D62A2200271BB4 /* AppDelegate.m */; };
 		458F054B22D62A2200271BB4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 458F054A22D62A2200271BB4 /* ViewController.m */; };
 		458F054E22D62A2200271BB4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 458F054C22D62A2200271BB4 /* Main.storyboard */; };
@@ -194,6 +202,20 @@
 		18953DAC22DF1A6500D4EB2A /* WHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHome.m; sourceTree = "<group>"; };
 		18953DB122DF1E3F00D4EB2A /* WTabVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTabVC.h; sourceTree = "<group>"; };
 		18953DB222DF1E3F00D4EB2A /* WTabVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTabVC.m; sourceTree = "<group>"; };
+		18953DB622E03D2000D4EB2A /* WAnchorStart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WAnchorStart.h; sourceTree = "<group>"; };
+		18953DB722E03D2000D4EB2A /* WAnchorStart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WAnchorStart.m; sourceTree = "<group>"; };
+		18953DB922E03D6800D4EB2A /* WWatch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WWatch.h; sourceTree = "<group>"; };
+		18953DBA22E03D6800D4EB2A /* WWatch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WWatch.m; sourceTree = "<group>"; };
+		18953DBC22E0556B00D4EB2A /* WPasswordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WPasswordCell.h; sourceTree = "<group>"; };
+		18953DBD22E0556B00D4EB2A /* WPasswordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WPasswordCell.m; sourceTree = "<group>"; };
+		18953DBF22E0557500D4EB2A /* WForgetCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WForgetCell.h; sourceTree = "<group>"; };
+		18953DC022E0557500D4EB2A /* WForgetCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WForgetCell.m; sourceTree = "<group>"; };
+		18953DC222E056DB00D4EB2A /* WForget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WForget.h; sourceTree = "<group>"; };
+		18953DC322E056DB00D4EB2A /* WForget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WForget.m; sourceTree = "<group>"; };
+		18953DC622E0687A00D4EB2A /* ca_right@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ca_right@3x.png"; sourceTree = "<group>"; };
+		18953DC722E0687A00D4EB2A /* ca_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ca_right@2x.png"; sourceTree = "<group>"; };
+		18953DCF22E09F4700D4EB2A /* WEditorView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WEditorView.h; sourceTree = "<group>"; };
+		18953DD022E09F4700D4EB2A /* WEditorView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WEditorView.m; sourceTree = "<group>"; };
 		458F054322D62A2200271BB4 /* OC_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OC_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		458F054622D62A2200271BB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		458F054722D62A2200271BB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -343,6 +365,8 @@
 			children = (
 				18953DA822DF18B900D4EB2A /* WShow.h */,
 				18953DA922DF18B900D4EB2A /* WShow.m */,
+				18953DB922E03D6800D4EB2A /* WWatch.h */,
+				18953DBA22E03D6800D4EB2A /* WWatch.m */,
 			);
 			path = show;
 			sourceTree = "<group>";
@@ -401,6 +425,8 @@
 				18953D3422DEFBE200D4EB2A /* WPhoneLogin.m */,
 				18953D3622DEFBF900D4EB2A /* WRegistered.h */,
 				18953D3722DEFBF900D4EB2A /* WRegistered.m */,
+				18953DC222E056DB00D4EB2A /* WForget.h */,
+				18953DC322E056DB00D4EB2A /* WForget.m */,
 			);
 			path = login;
 			sourceTree = "<group>";
@@ -490,6 +516,24 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		18953DB522E03CDA00D4EB2A /* start */ = {
+			isa = PBXGroup;
+			children = (
+				18953DB622E03D2000D4EB2A /* WAnchorStart.h */,
+				18953DB722E03D2000D4EB2A /* WAnchorStart.m */,
+			);
+			path = start;
+			sourceTree = "<group>";
+		};
+		18953DCE22E09EF900D4EB2A /* windows */ = {
+			isa = PBXGroup;
+			children = (
+				18953DCF22E09F4700D4EB2A /* WEditorView.h */,
+				18953DD022E09F4700D4EB2A /* WEditorView.m */,
+			);
+			path = windows;
+			sourceTree = "<group>";
+		};
 		458F053A22D62A2100271BB4 = {
 			isa = PBXGroup;
 			children = (
@@ -526,6 +570,8 @@
 				458F057822D62A2F00271BB4 /* ViewControllers */,
 				458F054C22D62A2200271BB4 /* Main.storyboard */,
 				458F054F22D62A2300271BB4 /* Assets.xcassets */,
+				18953DC622E0687A00D4EB2A /* ca_right@3x.png */,
+				18953DC722E0687A00D4EB2A /* ca_right@2x.png */,
 				458F055122D62A2300271BB4 /* LaunchScreen.storyboard */,
 				458F055422D62A2300271BB4 /* Info.plist */,
 				458F055522D62A2300271BB4 /* main.m */,
@@ -554,6 +600,7 @@
 		458F057822D62A2F00271BB4 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				18953DCE22E09EF900D4EB2A /* windows */,
 				18953D6C22DF035200D4EB2A /* test */,
 				18953D7222DF04C400D4EB2A /* WTableListVC.h */,
 				18953D7322DF04C400D4EB2A /* WTableListVC.m */,
@@ -590,6 +637,7 @@
 				18953D2122DEF8D400D4EB2A /* home */,
 				18953D2022DEF8D100D4EB2A /* bang */,
 				18953D1E22DEF89F00D4EB2A /* show */,
+				18953DB522E03CDA00D4EB2A /* start */,
 				18953D2722DEFA4300D4EB2A /* end */,
 			);
 			path = Models;
@@ -718,6 +766,10 @@
 				458F05F422DF631300271BB4 /* WLoginVCodeCell.m */,
 				458F05F622DF632600271BB4 /* WLoginButtonCell.h */,
 				458F05F722DF632600271BB4 /* WLoginButtonCell.m */,
+				18953DBC22E0556B00D4EB2A /* WPasswordCell.h */,
+				18953DBD22E0556B00D4EB2A /* WPasswordCell.m */,
+				18953DBF22E0557500D4EB2A /* WForgetCell.h */,
+				18953DC022E0557500D4EB2A /* WForgetCell.m */,
 			);
 			path = loginCell;
 			sourceTree = "<group>";
@@ -847,6 +899,8 @@
 			files = (
 				458F055322D62A2300271BB4 /* LaunchScreen.storyboard in Resources */,
 				458F055022D62A2300271BB4 /* Assets.xcassets in Resources */,
+				18953DC922E0687A00D4EB2A /* ca_right@2x.png in Resources */,
+				18953DC822E0687A00D4EB2A /* ca_right@3x.png in Resources */,
 				458F054E22D62A2200271BB4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -890,6 +944,7 @@
 				18953D9E22DF08F900D4EB2A /* MASViewConstraint.m in Sources */,
 				458F05DD22DF59AF00271BB4 /* WHomeBottomCell.m in Sources */,
 				18953DA722DF0F3000D4EB2A /* Router.m in Sources */,
+				18953DD122E09F4700D4EB2A /* WEditorView.m in Sources */,
 				458F061922DF69D900271BB4 /* WCTitleCell.m in Sources */,
 				18953D6222DEFF8400D4EB2A /* WHttpPhoneLogin.m in Sources */,
 				18953D9B22DF08F900D4EB2A /* NSArray+MASAdditions.m in Sources */,
@@ -902,6 +957,7 @@
 				458F05BD22D99AEC00271BB4 /* UICollectionViewCell+CellFunc.m in Sources */,
 				18953D3222DEFBCC00D4EB2A /* WLogin.m in Sources */,
 				458F060122DF68AA00271BB4 /* WMineLineCell.m in Sources */,
+				18953DBE22E0556B00D4EB2A /* WPasswordCell.m in Sources */,
 				18953D5F22DEFF4100D4EB2A /* WAudienceEnd.m in Sources */,
 				458F059D22D7748A00271BB4 /* WTable.m in Sources */,
 				458F05D722DF538B00271BB4 /* WHomeTabCell.m in Sources */,
@@ -913,6 +969,8 @@
 				458F05F522DF631300271BB4 /* WLoginVCodeCell.m in Sources */,
 				458F05E022DF59BF00271BB4 /* WHomeBottomCellModel.m in Sources */,
 				18953D7722DF04E300D4EB2A /* WCollectionListVC.m in Sources */,
+				18953DB822E03D2000D4EB2A /* WAnchorStart.m in Sources */,
+				18953DC122E0557500D4EB2A /* WForgetCell.m in Sources */,
 				458F05AF22D784B400271BB4 /* UITableViewCell+CellFunc.m in Sources */,
 				458F060D22DF696200271BB4 /* WLRTitleCell.m in Sources */,
 				458F05C422D99E0E00271BB4 /* TestCollectionViewCell.m in Sources */,
@@ -927,6 +985,7 @@
 				458F058422D62A8C00271BB4 /* OneCell.m in Sources */,
 				458F058122D62A7C00271BB4 /* One.m in Sources */,
 				18953D5C22DEFF1100D4EB2A /* WAnchorEnd.m in Sources */,
+				18953DC422E056DB00D4EB2A /* WForget.m in Sources */,
 				18953D5922DEFE4400D4EB2A /* WBang.m in Sources */,
 				18953D4722DEFD0200D4EB2A /* WSetUp.m in Sources */,
 				458F060722DF690B00271BB4 /* WPersonHeaderCell.m in Sources */,
@@ -943,6 +1002,7 @@
 				18953D4A22DEFD4C00D4EB2A /* WHost.m in Sources */,
 				18953D3522DEFBE200D4EB2A /* WPhoneLogin.m in Sources */,
 				18953D9622DF08F900D4EB2A /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				18953DBB22E03D6800D4EB2A /* WWatch.m in Sources */,
 				458F05A622D780C600271BB4 /* OneCellModel.m in Sources */,
 				458F054822D62A2200271BB4 /* AppDelegate.m in Sources */,
 				18953CED22DC6ABC00D4EB2A /* Cells.m in Sources */,

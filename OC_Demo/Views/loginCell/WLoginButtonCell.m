@@ -20,14 +20,21 @@
         
         self.label =  [[UILabel alloc]init];
         [self.contentView addSubview:self.label];
-        self.label.textColor = UIColor.redColor;
+        self.label.textColor = UIColor.whiteColor;
         self.label.textAlignment = NSTextAlignmentCenter;
-
+        self.label.backgroundColor = UIColor.redColor;
+        
+        self.label.layer.borderColor = UIColor.redColor.CGColor;
+        self.label.layer.borderWidth = 1.0;
+        self.label.layer.cornerRadius = 20;
+        self.label.layer.masksToBounds = YES;
+        
+        
         [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.offset(0);
-            make.bottom.offset(0);
-            make.left.offset(0);
-            make.right.offset(0);
+            make.top.offset(5);
+            make.bottom.offset(-5);
+            make.left.offset(30);
+            make.right.offset(-30);
             
         }];
         

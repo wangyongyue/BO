@@ -9,7 +9,6 @@
 #import "WLoginOtherCell.h"
 
 @interface WLoginOtherCell ()
-@property(nonatomic,strong)UILabel *label;
 @end
 @implementation WLoginOtherCell
 
@@ -18,18 +17,41 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self){
         
-        self.label =  [[UILabel alloc]init];
-        [self.contentView addSubview:self.label];
-        self.label.textColor = UIColor.redColor;
-        self.label.textAlignment = NSTextAlignmentCenter;
-
-        [self.label mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.offset(0);
-            make.bottom.offset(0);
-            make.left.offset(0);
-            make.right.offset(0);
+        UIButton *weixin = [UIButton buttonWithType:UIButtonTypeCustom];
+        [weixin setTitle:@"微信" forState:UIControlStateNormal];
+        [weixin setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [self.contentView addSubview:weixin];
+        
+        UIButton *QQ = [UIButton buttonWithType:UIButtonTypeCustom];
+        [QQ setTitle:@"QQ" forState:UIControlStateNormal];
+        [QQ setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [self.contentView addSubview:QQ];
+        
+        
+        UIButton *weibo = [UIButton buttonWithType:UIButtonTypeCustom];
+        [weibo setTitle:@"微博" forState:UIControlStateNormal];
+        [weibo setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [self.contentView addSubview:weibo];
+        
+        [weixin mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.offset(80);
+            make.left.offset(WWIDTH/3);
+           
+        }];
+        
+        [QQ mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.offset(80);
+            make.left.offset(WWIDTH/2);
             
         }];
+        
+        [weibo mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.top.offset(80);
+            make.left.offset(WWIDTH/3*2);
+            
+        }];
+        
+        
         
     }
     
@@ -39,7 +61,6 @@
 - (void)setModel:(id<CellModelProtocol>)model{
     if ([model isKindOfClass:[WLoginOtherModel class]]){
         WLoginOtherModel *m = (WLoginOtherModel *)model;
-        self.label.text = m.title;
         
     }
 }
@@ -53,6 +74,6 @@
 }
 - (CGFloat)getCellHeight{
     
-    return 50;
+    return 100;
 }
 @end

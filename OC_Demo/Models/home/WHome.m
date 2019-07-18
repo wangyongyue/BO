@@ -22,9 +22,34 @@
     WTabVC *vc = [[WTabVC alloc]init];
     vc.navigationItem.title = @"home";
     vc.m = self;
+    vc.rightM = self;
     return vc;
 }
+- (void)navigationItems:(ItemsBlock)block{
+    
+    NSMutableArray *items = [[NSMutableArray alloc]init];
+    UIButton *bang = [UIButton buttonWithType:UIButtonTypeCustom];
+    [bang setTitle:@"榜" forState:UIControlStateNormal];
+    [bang setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    
+    UIButton *search = [UIButton buttonWithType:UIButtonTypeCustom];
+    [search setTitle:@"搜" forState:UIControlStateNormal];
+    [search setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [items addObject:search];
+    [items addObject:bang];
 
+    [bang addTarget:self action:@selector(clicKBang) forControlEvents:UIControlEventTouchUpInside];
+    [search addTarget:self action:@selector(clicKSearch) forControlEvents:UIControlEventTouchUpInside];
+
+
+    block(items);
+}
+- (void)clicKBang{
+    
+}
+- (void)clicKSearch{
+    
+}
 - (void)loadTabData:(ArrayBlock)block{
     WHomeTabCellModel *m1 = [[WHomeTabCellModel alloc]init];
     m1.title = @"热门";

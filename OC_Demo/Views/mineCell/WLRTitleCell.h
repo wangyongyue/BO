@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WLRTitleCellModel : NSObject <CellModelProtocol>
 @property(nonatomic,copy)NSString *title;
+@property(nonatomic,copy)NSString *subTitle;
 
 
 @end

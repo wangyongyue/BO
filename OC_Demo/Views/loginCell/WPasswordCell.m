@@ -1,21 +1,20 @@
 //
-//  WLoginVCodeCell.m
+//  WPasswordCell.m
 //  OC_Demo
 //
-//  Created by wangyongyue on 2019/7/17.
+//  Created by apple on 2019/7/18.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
-#import "WLoginVCodeCell.h"
+#import "WPasswordCell.h"
 
-@interface WLoginVCodeCell ()<UITextFieldDelegate>
+@interface WPasswordCell () <UITextFieldDelegate>
 @property(nonatomic,strong)UITextField *field;
-@property(nonatomic,strong)WLoginVCodeCellModel *inputModel;
-@property(nonatomic,strong)UIButton *vcode;
+@property(nonatomic,strong)WPasswordCellModel *inputModel;
 
 
 @end
-@implementation WLoginVCodeCell
+@implementation WPasswordCell
 
 - (UITextField *)field{
     if (_field == nil){
@@ -26,36 +25,18 @@
     }
     return _field;
 }
-- (UIButton *)vcode{
-    if (_vcode == nil){
-        _vcode = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_vcode setTitle:@"获取验证码" forState:UIControlStateNormal];
-        [_vcode setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [_vcode addTarget:self action:@selector(clickVCode) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _vcode;
-}
-
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self){
-        [self.contentView addSubview:self.vcode];
+        
         [self.contentView addSubview:self.field];
         self.field.delegate = self;
         [self.field mas_makeConstraints:^(MASConstraintMaker *make) {
             make.top.offset(5);
             make.bottom.offset(-5);
             make.left.offset(10);
-            make.right.offset(-10 - 90);
-            
-        }];
-        
-        [self.vcode mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.offset(5);
-            make.bottom.offset(-5);
-            make.width.offset(80);
             make.right.offset(-10);
             
         }];
@@ -66,11 +47,6 @@
     return self;
     
 }
-- (void)clickVCode{
-    
-    
-}
-
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string{
     
     self.inputModel.input = textField.text;
@@ -78,20 +54,18 @@
     return YES;
 }
 - (void)setModel:(id<CellModelProtocol>)model{
-    if ([model isKindOfClass:[WLoginVCodeCellModel class]]){
-        WLoginVCodeCellModel *m = (WLoginVCodeCellModel *)model;
-        
+    if ([model isKindOfClass:[WPasswordCellModel class]]){
+        WPasswordCellModel *m = (WPasswordCellModel *)model;
         self.field.placeholder = m.title;
         
         self.inputModel = m;
     }
 }
 @end
-
-@implementation WLoginVCodeCellModel
+@implementation WPasswordCellModel
 - (NSString *)getCellID{
     
-    return NSStringFromClass([WLoginVCodeCell class]);
+    return NSStringFromClass([WPasswordCell class]);
 }
 - (CGFloat)getCellHeight{
     

@@ -1,8 +1,8 @@
 //
-//  WLoginInputCell.h
+//  WForgetCell.h
 //  OC_Demo
 //
-//  Created by wangyongyue on 2019/7/17.
+//  Created by apple on 2019/7/18.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
@@ -11,11 +11,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WLoginInputCell : UITableViewCell
+@interface WForgetCell : UITableViewCell
 
 @end
 
-@interface WLoginInputCellModel : NSObject <CellModelProtocol>
+
+@interface WForgetCellModel : NSObject <CellModelProtocol>
 @property(nonatomic,copy)NSString *title;
 @property(nonatomic,copy)NSString *input;
 

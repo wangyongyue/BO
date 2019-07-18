@@ -37,7 +37,7 @@
     WLoginVCodeCellModel *m4 = [[WLoginVCodeCellModel alloc]init];
     m4.title = @"输入验证码";
     
-    WLoginInputCellModel *m2 = [[WLoginInputCellModel alloc]init];
+    WPasswordCellModel *m2 = [[WPasswordCellModel alloc]init];
     m2.title = @"输入密码";
     
     WLoginButtonCellModel *m3 = [[WLoginButtonCellModel alloc]init];

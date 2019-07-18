@@ -31,6 +31,8 @@
     [array addObject:[WTitleImgCell class]];
     [array addObject:[WCTitleCell class]];
     [array addObject:[WFollowCell class]];
+    [array addObject:[WPasswordCell class]];
+    [array addObject:[WForgetCell class]];
 
 
     

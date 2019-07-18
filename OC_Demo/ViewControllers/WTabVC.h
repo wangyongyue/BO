@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface WTabVC : UIViewController
 @property(nonatomic,strong)id<TableTabDataProtocol> m;
+@property(nonatomic,strong)id<NavigationItemProtocol> rightM;
+
 
 @end
 
