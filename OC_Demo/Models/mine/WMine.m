@@ -26,8 +26,8 @@
     return vc;
 }
 
-- (void)navigationItems:(ItemsBlock)block{
-    
+- (void)navigationItems{
+
     NSMutableArray *items = [[NSMutableArray alloc]init];
     UIButton *bang = [UIButton buttonWithType:UIButtonTypeCustom];
     [bang setTitle:@"编辑" forState:UIControlStateNormal];
@@ -36,9 +36,8 @@
     [items addObject:bang];
     
     [bang addTarget:self action:@selector(clicKBang) forControlEvents:UIControlEventTouchUpInside];
+    [Router naviagtionWithRightItems:[NSArray arrayWithObject:bang]];
     
-    
-    block(items);
 }
 - (void)clicKBang{
     

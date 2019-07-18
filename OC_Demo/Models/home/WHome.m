@@ -25,8 +25,8 @@
     vc.rightM = self;
     return vc;
 }
-- (void)navigationItems:(ItemsBlock)block{
-    
+- (void)navigationItems{
+
     NSMutableArray *items = [[NSMutableArray alloc]init];
     UIButton *bang = [UIButton buttonWithType:UIButtonTypeCustom];
     [bang setTitle:@"榜" forState:UIControlStateNormal];
@@ -41,8 +41,8 @@
     [bang addTarget:self action:@selector(clicKBang) forControlEvents:UIControlEventTouchUpInside];
     [search addTarget:self action:@selector(clicKSearch) forControlEvents:UIControlEventTouchUpInside];
 
+    [Router naviagtionWithRightItems:items];
 
-    block(items);
 }
 - (void)clicKBang{
     
@@ -51,6 +51,9 @@
     
 }
 - (void)loadTabData:(ArrayBlock)block{
+    
+    
+    
     WHomeTabCellModel *m1 = [[WHomeTabCellModel alloc]init];
     m1.title = @"热门";
     

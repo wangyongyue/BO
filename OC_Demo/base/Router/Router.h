@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Router : NSObject
 + (void)push:(id<GetVCProtocol>)m;
-+ (UINavigationController *)currentNC;
++ (void)pop;
++ (void)naviagtionWithRightItems:(NSArray *)array;
++ (void)naviagtionWithBackItem;
+
 @end
 
 NS_ASSUME_NONNULL_END

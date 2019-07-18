@@ -102,15 +102,8 @@
     
     
     //
-    [self.rightM navigationItems:^(NSArray * _Nonnull array) {
-        NSMutableArray *items = [[NSMutableArray alloc]init];
-        for (UIButton *item in array) {
-            
-            UIBarButtonItem *a = [[UIBarButtonItem alloc]initWithCustomView:item];
-            [items addObject:a];
-        }
-        self.navigationItem.rightBarButtonItems = items;
-    }];
+    [self.rightM navigationItems];
+
 
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{

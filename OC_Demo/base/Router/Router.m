@@ -14,6 +14,37 @@
     UIViewController *vc = [m getVC];
     [Router pushViewController:vc];
 }
++ (void)pop{
+    
+    [[Router currentNC] popViewControllerAnimated:YES];
+
+}
++ (void)naviagtionWithRightItems:(NSArray *)array{
+
+    NSMutableArray *items = [[NSMutableArray alloc]init];
+    for (UIButton *item in array) {
+        
+        UIBarButtonItem *a = [[UIBarButtonItem alloc]initWithCustomView:item];
+        [items addObject:a];
+    }
+    UIViewController *vc = [Router currentNC].viewControllers.lastObject;
+    vc.navigationItem.rightBarButtonItems = items;
+
+}
++ (void)naviagtionWithBackItem{
+    NSMutableArray *items = [[NSMutableArray alloc]init];
+    UIButton *bang = [UIButton buttonWithType:UIButtonTypeCustom];
+    [bang setTitle:@"back" forState:UIControlStateNormal];
+    [bang setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [bang addTarget:self action:@selector(clickBack) forControlEvents:UIControlEventTouchUpInside];
+    UIViewController *vc = [Router currentNC].viewControllers.lastObject;
+    vc.navigationItem.rightBarButtonItems = items;
+    
+}
+- (void)clickBack{
+    
+    [Router pop];
+}
 
 + (void)pushViewController:(UIViewController *)controller{
     

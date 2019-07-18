@@ -33,8 +33,6 @@
 
 //controller
 typedef void (^ArrayBlock)(NSArray * _Nonnull array);
-typedef void (^ItemsBlock)(NSArray * _Nonnull array);
-typedef void (^ItemBackBlock)(UIButton * _Nonnull item);
 typedef void (^ClickBlock)(NSString * _Nonnull str);
 
 @protocol TableDataProtocol <NSObject>
@@ -67,12 +65,7 @@ typedef void (^ClickBlock)(NSString * _Nonnull str);
 //navigationItemButton
 @protocol NavigationItemProtocol <NSObject>
 
-- (void)navigationItems:(ItemsBlock)block;
-
-@end
-@protocol NavigationBackProtocol <NSObject>
-
-- (void)navigationBack:(ItemBackBlock)block;
+- (void)navigationItems;
 
 @end
 
