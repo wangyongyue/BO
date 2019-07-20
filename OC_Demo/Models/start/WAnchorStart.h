@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "interface.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WAnchorStart : NSObject
+@interface WAnchorStart : NSObject <GetVCProtocol,TableDataProtocol>
 
 @end
 

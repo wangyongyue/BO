@@ -124,6 +124,7 @@ typedef void (^ClickBlock)(NSString * _Nonnull str);
 #import "WFollow.h"
 #import "WNew.h"
 #import "WForget.h"
+#import "WAnchorStart.h"
 
 
 //controller
@@ -161,3 +162,12 @@ typedef void (^ClickBlock)(NSString * _Nonnull str);
 #import "WPasswordCell.h"
 #import "WForgetCell.h"
 #import "WEditorView.h"
+#import "WStartButtonCell.h"
+#import "WStartShareCell.h"
+#import "WStartTopCell.h"
+#import "WStartInputCell.h"
+#import "WEndHeaderCell.h"
+#import "WEndTitleCell.h"
+#import "WEndNumberCell.h"
+#import "WEndFocusCell.h"
+#import "WEndBackCell.h"
