@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Test.h"
 #import "interface.h"
+#import <objc/message.h>
 @interface ViewController ()
 
 @end
@@ -120,4 +121,7 @@
     [Router push:m];
     
 }
+
+
+
 @end
