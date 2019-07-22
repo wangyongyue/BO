@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Test.h"
 #import "interface.h"
+#import <objc/message.h>
 @interface ViewController ()
 
 @end
@@ -56,6 +57,11 @@
     [button6 setTitle:@"bang" forState:UIControlStateNormal];
     [button6 setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
     
+    UIButton *button7 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [self.view addSubview:button7];
+    [button7 setTitle:@"start" forState:UIControlStateNormal];
+    [button7 setTitleColor:UIColor.blackColor forState:UIControlStateNormal];
+    
     button.frame = CGRectMake(50, 80, 100, 30);
     button1.frame = CGRectMake(50, 80 + 50, 100, 30);
     button2.frame = CGRectMake(50, 80 + 50 *2, 100, 30);
@@ -63,6 +69,7 @@
     button4.frame = CGRectMake(50, 80 + 50 *4, 100, 30);
     button5.frame = CGRectMake(50, 80 + 50 *5, 100, 30);
     button6.frame = CGRectMake(50, 80 + 50 *6, 100, 30);
+    button7.frame = CGRectMake(50, 80 + 50 *7, 100, 30);
 
     [button addTarget:self action:@selector(click1) forControlEvents:UIControlEventTouchUpInside];
     [button1 addTarget:self action:@selector(click2) forControlEvents:UIControlEventTouchUpInside];
@@ -71,6 +78,7 @@
     [button4 addTarget:self action:@selector(click5) forControlEvents:UIControlEventTouchUpInside];
     [button5 addTarget:self action:@selector(click6) forControlEvents:UIControlEventTouchUpInside];
     [button6 addTarget:self action:@selector(click7) forControlEvents:UIControlEventTouchUpInside];
+    [button7 addTarget:self action:@selector(click8) forControlEvents:UIControlEventTouchUpInside];
 
 }
 - (void)click1{
@@ -108,4 +116,12 @@
     [Router push:m];
     
 }
+- (void)click8{
+    WAnchorStart *m = [[WAnchorStart alloc]init];
+    [Router push:m];
+    
+}
+
+
+
 @end

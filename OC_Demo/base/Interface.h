@@ -143,6 +143,7 @@ typedef BOOL (^LimitBlock)();
 #import "WNew.h"
 #import "WForget.h"
 #import "WShowData.h"
+#import "WAnchorStart.h"
 
 
 //controller
@@ -186,3 +187,12 @@ typedef BOOL (^LimitBlock)();
 #import "WShowView.h"
 #import "WShowHeaderCell.h"
 #import "WShowMessageCell.h"
+#import "WStartButtonCell.h"
+#import "WStartShareCell.h"
+#import "WStartTopCell.h"
+#import "WStartInputCell.h"
+#import "WEndHeaderCell.h"
+#import "WEndTitleCell.h"
+#import "WEndNumberCell.h"
+#import "WEndFocusCell.h"
+#import "WEndBackCell.h"

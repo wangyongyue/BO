@@ -35,6 +35,17 @@
     [array addObject:[WForgetCell class]];
     [array addObject:[WShowMessageCell class]];
 
+    
+    [array addObject:[WStartTopCell class]];
+    [array addObject:[WStartInputCell class]];
+    [array addObject:[WStartShareCell class]];
+    [array addObject:[WStartButtonCell class]];
+
+    [array addObject:[WEndHeaderCell class]];
+    [array addObject:[WEndTitleCell class]];
+    [array addObject:[WEndNumberCell class]];
+    [array addObject:[WEndFocusCell class]];
+    [array addObject:[WEndBackCell class]];
 
     
     

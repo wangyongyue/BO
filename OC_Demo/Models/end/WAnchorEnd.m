@@ -34,35 +34,41 @@
     
 }
 - (void)postWithHttp:(id<HttpProtocol>)http data:(NSDictionary *)response{
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+   
+    WEndHeaderCellModel *header = [[WEndHeaderCellModel alloc]init];
+    header.title = @"头像";
+    
+    WEndTitleCellModel *title = [[WEndTitleCellModel alloc]init];
+    title.title = @"直播已经结束";
+    
+    WEndNumberCellModel *number = [[WEndNumberCellModel alloc]init];
+    number.title = @"观看人数  120 人";
+    
+    WEndFocusCellModel *focus = [[WEndFocusCellModel alloc]init];
+    focus.title = @"分享直播";
+    
+    WEndBackCellModel *back = [[WEndBackCellModel alloc]init];
+    back.title = @"返回首页";
+    
+    [self.array addObject:header];
+    [self.array addObject:title];
+    [self.array addObject:number];
+    [self.array addObject:focus];
+    [self.array addObject:back];
+    
     self.block(self.array);
     
 }
 
 - (void)tableIndex:(NSInteger)index{
     
-    if (index == 0){
+    if (index == 4){
         
-        WPersonal *m = [[WPersonal alloc]init];
-        [Router push:m];
+        [Router pop];
         
-    }else if (index == 1){
-        
-        WMoney *m = [[WMoney alloc]init];
-        [Router push:m];
-        
-    }else if (index == 2){
-        
-        WMoney *m = [[WMoney alloc]init];
-        [Router push:m];
     }
     
 }
-
 
 
 - (NSMutableArray *)array{
