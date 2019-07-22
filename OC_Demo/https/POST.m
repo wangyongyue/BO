@@ -24,7 +24,7 @@
     NSDictionary *body = [http getBody];
     NSMutableDictionary *response = [[NSMutableDictionary alloc]init];
     NSLog(url);
-    [model postWithData:response];
+    [model postWithHttp:http data:response];
     
 }
 

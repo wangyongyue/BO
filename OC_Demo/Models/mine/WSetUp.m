@@ -29,8 +29,11 @@
     self.block = block;
     [POST request:self.http model:self];
 }
-- (void)postWithData:(NSDictionary *)response{
+- (void)postWithHttp:(id<HttpProtocol>)http rrror:(NSString *)error{
     
+    
+}
+- (void)postWithHttp:(id<HttpProtocol>)http data:(NSDictionary *)response{
     WLRTitleCellModel *aid = [[WLRTitleCellModel alloc]init];
     aid.title = @"ID号";
     aid.subTitle = @"123";
@@ -68,10 +71,7 @@
     self.block(self.array);
     
 }
-- (void)postWithError:(NSString *)error{
-    
-    
-}
+
 - (void)tableIndex:(NSInteger)index{
     
     if (index == 1){

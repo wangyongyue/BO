@@ -29,17 +29,17 @@
     self.block = block;
     [POST request:self.http model:self];
 }
-- (void)postWithData:(NSDictionary *)response{
-    WLRTitleCellModel *m = [[WLRTitleCellModel alloc]init];
+- (void)postWithHttp:(id<HttpProtocol>)http rrror:(NSString *)error{
+    
+    
+}
+- (void)postWithHttp:(id<HttpProtocol>)http data:(NSDictionary *)response{    WLRTitleCellModel *m = [[WLRTitleCellModel alloc]init];
     m.title = @"10200   6元";
     [self.array addObject:m];
     self.block(self.array);
     
 }
-- (void)postWithError:(NSString *)error{
-    
-    
-}
+
 - (void)tableIndex:(NSInteger)index{
     
    

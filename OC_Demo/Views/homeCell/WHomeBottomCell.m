@@ -34,11 +34,7 @@
             make.right.offset(0);
 
         }];
-        if (m.isLoad == NO){
-            [m.subView load];
-            m.isLoad = YES;
-
-        }
+       
        
 
     }

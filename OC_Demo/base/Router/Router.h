@@ -14,8 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)push:(id<GetVCProtocol>)m;
 + (void)pop;
 + (void)naviagtionWithRightItems:(NSArray *)array;
-+ (void)naviagtionWithBackItem;
-
++ (void)naviagtionWithBackItem:(UIButton *)button;
 @end
 
 NS_ASSUME_NONNULL_END

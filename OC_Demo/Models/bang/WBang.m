@@ -12,58 +12,56 @@
 @property(nonatomic,strong)NSMutableArray *array;
 @property(nonatomic,strong)WHttpMine *http;
 @property(nonatomic,copy)ArrayBlock block;
+@property(nonatomic,copy)LimitBlock lBlock;
 
 @end
 @implementation WBang
 
 
 - (UIViewController *)getVC{
-    WTableListVC *vc = [[WTableListVC alloc]init];
-    vc.navigationItem.title = @"bang";
+    WWebVC *vc = [[WWebVC alloc]init];
+    vc.navigationItem.title = @"web";
     vc.m = self;
+    vc.rightM = self;
     return vc;
 }
-
-- (void)loadData:(ArrayBlock)block{
+- (void)loadWithUrl:(StringBlock)block{
     
-    self.block = block;
-    [POST request:self.http model:self];
+    block(@"https://www.baidu.com");
 }
-- (void)postWithData:(NSDictionary *)response{
+- (void)goBack:(LimitBlock)block{
     
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    self.block(self.array);
+    self.lBlock = block;
+}
+- (void)navigationItems{
+    
+    NSMutableArray *items = [[NSMutableArray alloc]init];
+    UIButton *bang = [UIButton buttonWithType:UIButtonTypeCustom];
+    [bang setTitle:@"back" forState:UIControlStateNormal];
+    [bang setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    
+    UIButton *search = [UIButton buttonWithType:UIButtonTypeCustom];
+    [search setTitle:@"关闭" forState:UIControlStateNormal];
+    [search setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [items addObject:search];
+    
+    [bang addTarget:self action:@selector(clicKBack) forControlEvents:UIControlEventTouchUpInside];
+    [search addTarget:self action:@selector(clicKClose) forControlEvents:UIControlEventTouchUpInside];
+    
+    [Router naviagtionWithRightItems:items];
+    [Router naviagtionWithBackItem:bang];
     
 }
-- (void)postWithError:(NSString *)error{
-    
-    
-}
-- (void)tableIndex:(NSInteger)index{
-    
-    if (index == 0){
+- (void)clicKBack{
+    if (self.lBlock()){
         
-        WPersonal *m = [[WPersonal alloc]init];
-        [Router push:m];
-        
-    }else if (index == 1){
-        
-        WMoney *m = [[WMoney alloc]init];
-        [Router push:m];
-        
-    }else if (index == 2){
-        
-        WMoney *m = [[WMoney alloc]init];
-        [Router push:m];
+        [Router pop];
     }
-    
 }
-
-
+- (void)clicKClose{
+    
+    [Router pop];
+}
 
 - (NSMutableArray *)array{
     if (_array == nil){

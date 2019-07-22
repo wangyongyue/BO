@@ -50,8 +50,11 @@
     self.block = block;
     [POST request:self.http model:self];
 }
-- (void)postWithData:(NSDictionary *)response{
+- (void)postWithHttp:(id<HttpProtocol>)http rrror:(NSString *)error{
     
+    
+}
+- (void)postWithHttp:(id<HttpProtocol>)http data:(NSDictionary *)response{
     WMineHeaderCellModel *header = [[WMineHeaderCellModel alloc]init];
     header.title = @"头像";
     
@@ -81,10 +84,7 @@
     self.block(self.array);
     
 }
-- (void)postWithError:(NSString *)error{
-    
-    
-}
+
 - (void)tableIndex:(NSInteger)index{
     
     if (index == 0){

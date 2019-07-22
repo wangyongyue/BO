@@ -26,14 +26,16 @@
 @end
 @protocol POSTProtocol <NSObject>
 
-- (void)postWithData:(NSDictionary *)response;
-- (void)postWithError:(NSString *)error;
+- (void)postWithHttp:(id<HttpProtocol>)http data:(NSDictionary *)response;
+- (void)postWithHttp:(id<HttpProtocol>)http rrror:(NSString *)error;
 
 @end
 
 //controller
 typedef void (^ArrayBlock)(NSArray * _Nonnull array);
 typedef void (^ClickBlock)(NSString * _Nonnull str);
+typedef void (^StringBlock)(NSString * _Nonnull str);
+typedef BOOL (^LimitBlock)();
 
 @protocol TableDataProtocol <NSObject>
 
@@ -66,6 +68,22 @@ typedef void (^ClickBlock)(NSString * _Nonnull str);
 @protocol NavigationItemProtocol <NSObject>
 
 - (void)navigationItems;
+
+@end
+
+//showvc
+@protocol TableShowProtocol <NSObject>
+
+- (void)loadShowTop:(ArrayBlock)block;
+- (void)loadShowMessage:(ArrayBlock)block;
+
+@end
+
+//web
+@protocol WebProtocol <NSObject>
+
+- (void)loadWithUrl:(StringBlock)block;
+- (void)goBack:(LimitBlock)block;
 
 @end
 
@@ -124,10 +142,14 @@ typedef void (^ClickBlock)(NSString * _Nonnull str);
 #import "WFollow.h"
 #import "WNew.h"
 #import "WForget.h"
+#import "WShowData.h"
 
 
 //controller
 #import "WLoginController.h"
+#import "WCollectionListVC.h"
+#import "WShowViewController.h"
+#import "WWebVC.h"
 
 
 
@@ -161,3 +183,6 @@ typedef void (^ClickBlock)(NSString * _Nonnull str);
 #import "WPasswordCell.h"
 #import "WForgetCell.h"
 #import "WEditorView.h"
+#import "WShowView.h"
+#import "WShowHeaderCell.h"
+#import "WShowMessageCell.h"

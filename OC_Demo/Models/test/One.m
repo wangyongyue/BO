@@ -54,8 +54,8 @@
     self.block = block;
     [POST request:self.http model:self];
 }
-- (void)postWithData:(NSDictionary *)response{
-    
+- (void)postWithHttp:(id<HttpProtocol>)http data:(NSDictionary *)response{
+
     [self.array addObject:[[OneCellModel alloc]init]];
     [self.array addObject:[[OneCellModel alloc]init]];
     [self.array addObject:[[OneCellModel alloc]init]];
@@ -64,8 +64,8 @@
     self.block(self.array);
     
 }
-- (void)postWithError:(NSString *)error{
-    
+- (void)postWithHttp:(id<HttpProtocol>)http rrror:(NSString *)error{
+
     
 }
 - (void)tableIndex:(NSInteger)index{

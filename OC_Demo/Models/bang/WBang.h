@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WBang : NSObject <GetVCProtocol,TableDataProtocol,POSTProtocol>
+@interface WBang : NSObject <GetVCProtocol,WebProtocol,NavigationItemProtocol>
 
 @end
 

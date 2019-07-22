@@ -117,6 +117,14 @@
         
     }];
     
+    NSInteger index = (NSInteger)scrollView.contentOffset.x/WWIDTH;
+    WHomeBottomCellModel *model  = self.collectionBottom.array[index];
+    if (model.isLoad == NO){
+        
+        [model.subView load];
+    }
+    model.isLoad = YES;
+    
 }
 
 

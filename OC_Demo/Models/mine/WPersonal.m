@@ -29,7 +29,11 @@
     self.block = block;
     [POST request:self.http model:self];
 }
-- (void)postWithData:(NSDictionary *)response{
+- (void)postWithHttp:(id<HttpProtocol>)http rrror:(NSString *)error{
+    
+    
+}
+- (void)postWithHttp:(id<HttpProtocol>)http data:(NSDictionary *)response{
     
     WPersonHeaderCellModel *header = [[WPersonHeaderCellModel alloc]init];
     header.title = @"头像";
@@ -69,21 +73,18 @@
     self.block(self.array);
     
 }
-- (void)postWithError:(NSString *)error{
-    
-    
-}
+
 - (void)tableIndex:(NSInteger)index{
     
-    if (index == 0){
-        
-//        WPersonEditor *m = [[WPersonEditor alloc]init];
-//        [Router push:m];
-        
+    if (index > 1){
+
+        WPersonCellModel *m = (WPersonCellModel *)self.array[index];
         WEditorView *view = [[WEditorView alloc]init];
-        [view show:@"sdf" block:^(NSString * _Nonnull str) {
+        [view show:m.subTitle block:^(NSString * _Nonnull str) {
            
             NSLog(str);
+            m.subTitle = str;
+            self.block(self.array);
         }];
         
     }

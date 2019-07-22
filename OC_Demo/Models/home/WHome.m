@@ -74,6 +74,7 @@
     WHomeBottomCellModel *m1 = [[WHomeBottomCellModel alloc]init];
     WHost *host = [[WHost alloc]init];
     m1.subView = [host getView];
+    [m1.subView load];
     
     WHomeBottomCellModel *m2 = [[WHomeBottomCellModel alloc]init];
     WFollow *follow = [[WFollow alloc]init];

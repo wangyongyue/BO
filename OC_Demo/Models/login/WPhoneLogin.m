@@ -26,8 +26,29 @@
     WTableListVC *vc = [[WTableListVC alloc]init];
     vc.navigationItem.title = @"手机登录";
     vc.m = self;
+    vc.rightM = self;
     return vc;
 }
+- (void)navigationItems{
+    
+    NSMutableArray *items = [[NSMutableArray alloc]init];
+ 
+    UIButton *search = [UIButton buttonWithType:UIButtonTypeCustom];
+    [search setTitle:@"注册" forState:UIControlStateNormal];
+    [search setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [items addObject:search];
+    
+    [search addTarget:self action:@selector(clicKReg) forControlEvents:UIControlEventTouchUpInside];
+    
+    [Router naviagtionWithRightItems:items];
+
+}
+- (void)clicKReg{
+    
+    WRegistered *w = [[WRegistered alloc]init];
+    [Router push:w];
+}
+
 
 - (void)loadData:(ArrayBlock)block{
     

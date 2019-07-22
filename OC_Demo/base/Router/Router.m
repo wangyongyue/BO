@@ -31,14 +31,10 @@
     vc.navigationItem.rightBarButtonItems = items;
 
 }
-+ (void)naviagtionWithBackItem{
-    NSMutableArray *items = [[NSMutableArray alloc]init];
-    UIButton *bang = [UIButton buttonWithType:UIButtonTypeCustom];
-    [bang setTitle:@"back" forState:UIControlStateNormal];
-    [bang setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [bang addTarget:self action:@selector(clickBack) forControlEvents:UIControlEventTouchUpInside];
++ (void)naviagtionWithBackItem:(UIButton *)button{
+    UIBarButtonItem *item = [[UIBarButtonItem alloc]initWithCustomView:button];
     UIViewController *vc = [Router currentNC].viewControllers.lastObject;
-    vc.navigationItem.rightBarButtonItems = items;
+    vc.navigationItem.leftBarButtonItem = item;
     
 }
 - (void)clickBack{

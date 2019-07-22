@@ -18,7 +18,7 @@
 
 
 - (UIViewController *)getVC{
-    WTableListVC *vc = [[WTableListVC alloc]init];
+    WShowViewController *vc = [[WShowViewController alloc]init];
     vc.navigationItem.title = @"show";
     vc.m = self;
     return vc;
@@ -29,20 +29,34 @@
     self.block = block;
     [POST request:self.http model:self];
 }
-- (void)postWithData:(NSDictionary *)response{
+- (void)postWithHttp:(id<HttpProtocol>)http rrror:(NSString *)error{
     
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
-    [self.array addObject:[[OneCellModel alloc]init]];
+    
+}
+- (void)postWithHttp:(id<HttpProtocol>)http data:(NSDictionary *)response{
+    WHomeBottomCellModel *m1 = [[WHomeBottomCellModel alloc]init];
+    WShowData *show1 = [[WShowData alloc]init];
+    m1.subView = [show1 getView];
+    [m1.subView load];
+    
+    WHomeBottomCellModel *m2 = [[WHomeBottomCellModel alloc]init];
+    WShowData *show2 = [[WShowData alloc]init];
+    m2.subView = [show2 getView];
+    
+    
+    WHomeBottomCellModel *m3 = [[WHomeBottomCellModel alloc]init];
+    WShowData *show3 = [[WShowData alloc]init];
+    m3.subView = [show3 getView];
+    
+    
+    [self.array addObject:m1];
+    [self.array addObject:m2];
+    [self.array addObject:m3];
+    
     self.block(self.array);
-    
+  
 }
-- (void)postWithError:(NSString *)error{
-    
-    
-}
+
 - (void)tableIndex:(NSInteger)index{
     
     if (index == 0){

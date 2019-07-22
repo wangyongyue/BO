@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WPhoneLogin : NSObject <GetVCProtocol,TableDataProtocol>
+@interface WPhoneLogin : NSObject <GetVCProtocol,TableDataProtocol,NavigationItemProtocol>
 
 @end
 

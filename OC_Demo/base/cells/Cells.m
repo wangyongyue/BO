@@ -33,6 +33,7 @@
     [array addObject:[WFollowCell class]];
     [array addObject:[WPasswordCell class]];
     [array addObject:[WForgetCell class]];
+    [array addObject:[WShowMessageCell class]];
 
 
     
@@ -45,6 +46,7 @@
     [array addObject:[WHomeTabCell class]];
     [array addObject:[WHomeBottomCell class]];
     [array addObject:[WHomeHostCell class]];
+    [array addObject:[WShowHeaderCell class]];
 
     
     
